@@ -42,5 +42,5 @@ jobs:
       - name: Build and push
         run: |
           echo "${{ env.DOCKER_PASSWORD }}" | docker login -u "${{ env.DOCKER_USERNAME }}" --password-stdin
-          docker image build -t "${{ env.DOCKER_USERNAME }}/node-app:latest" .
-          docker push "${{ env.DOCKER_USERNAME }}/node-app:latest"
+          docker image build -t "${{ env.DOCKER_USERNAME }}/my-app:latest" .
+          docker push "${{ env.DOCKER_USERNAME }}/my-app:latest"
