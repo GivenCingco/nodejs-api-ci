@@ -49,4 +49,4 @@ jobs:
         with:
           context: DockerFileFolder/
           push: true
-          tags: "${{ env.DOCKERHUB_USERNAME }}/my-app:latest"
+          tags: "${{ env.DOCKER_USERNAME }}/my-app:latest"
